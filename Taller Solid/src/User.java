@@ -1,6 +1,6 @@
 public class User {
-    String nickname;
-    String password;
+    private String nickname;
+    private String password;
 
     public User(String nickname, String password) {
         this.nickname = nickname;
@@ -22,4 +22,9 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+	@Override
+	public String toString() {
+		return "User [nickname=" + nickname + ", password=" + password + "]";
+	}
 }
